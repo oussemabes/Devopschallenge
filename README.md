@@ -1,32 +1,74 @@
-# Creating vpc
+# Creating devopschallenge VPC
 
-![Alt text](image.png)
+![Alt text](image-1.png)
 
-## Available Scripts
+## Creation of RDS postgres instance inside the new VPC
+![Alt text](image-4.png)
 
-In the project directory, you can run:
+![Alt text](image-2.png)
 
-### `npm start`
+![Alt text](image-3.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Link the RDS postgres to EC2 and create new table
+![Alt text](image-5.png)
+![Alt text](image-6.png)
+Note:This rule has been automatically generated to permit connections from the EC2 instance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Alt text](image-7.png)
+Create table `posts` with two colums `title` and `author`
 
-### `npm test`
+## Create an AppSync API named challengedevops
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Alt text](image-8.png)
+the schema is
+![Alt text](image-9.png)
+## Create an Lumbda function as Data source for challengedevops API in the same VPC
+### Configure environment variables
+![Alt text](image-10.png)
+### Configure connection between RDS and Lumbda function
+and then set change `rds.force_ssl` value to `0` so that lumbda function can acces the data base because by default our RDS data base can only be accesible from ssh
+![Alt text](image-11.png)
+### Configure poxy connection
 
-### `npm run build`
+![Alt text](image-12.png)
+### configure security Group so that lumbda function can acces the RDS database
+![Alt text](image-13.png)
+### Write the logic of the function in the local then deployed it as .zip file
+you can see the entrie code in this repo in file named `Lumbda-function-logic.js`
+### Create the data source for AWS Appsync
+![Alt text](image-14.png)
+![Alt text](image-15.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Attach resolver for the query and mutation
+### for the CreatePost mutation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Alt text](image-16.png)
+![Alt text](image-17.png)
+Note:this is the test of mutation
+![Alt text](image-18.png)
 
+### for the Listposts query
+![Alt text](image-19.png)
+![Alt text](image-20.png)
+Note:this is the test of query
+![Alt text](image-21.png)
+## Integrate this API's with amplify and react
+i followed those instrunctions
+![Alt text](image-22.png)
+and i had to create an access key
+![Alt text](image-23.png)
+i used it in amplify init then i write the entire logic based on amplify documentation `https://docs.amplify.aws/react/`
+
+## Set Up GitHub Actions for my react-amplify Application
+step 1 : Create a Workflow File
+step 2 : Add a New Workflow
+step 3 : Define the Workflow in the YML File
+step 4 : Push the Changes
+
+## Addinitinal work : add create Api appsync Graphql from local and push it to aws
+
+![Alt text](image-24.png)
+## Making changes to this last api from local and deploy it from the ci/cd github actions
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
