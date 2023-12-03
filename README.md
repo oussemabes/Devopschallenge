@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-# Devopschallenge
-=======
-# Getting Started with Create React App
+# Creating vpc
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt text](image.png)
 
 ## Available Scripts
 
@@ -71,4 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 8d292e2be71c534c1bd63ccb46cc0b59c3d9fd79
