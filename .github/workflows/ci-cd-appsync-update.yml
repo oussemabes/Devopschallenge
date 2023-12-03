@@ -1,4 +1,4 @@
-name: Update Appsync api
+name: Update Appsync API
 
 on:
   push:
@@ -22,7 +22,9 @@ jobs:
         run: npm install -g @aws-amplify/cli
 
       - name: Pull Amplify environment
-        run: amplify pull --appId d2cfef0drhe8i4
+        run: |
+          cd amplify
+          amplify pull --appId d2cfef0drhe8i4
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
