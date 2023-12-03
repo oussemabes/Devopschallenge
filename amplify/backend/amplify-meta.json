@@ -35,7 +35,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-devopschallenge-dev-13009-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apidevopschallenge"
       },
-      "lastPushTimeStamp": "2023-12-03T11:47:10.209Z",
+      "lastPushTimeStamp": "2023-12-03T13:18:59.489Z",
       "lastPushDirHash": "6PcHS6USpqOi341FiEOn1yBtaso="
     }
   }
