@@ -23,7 +23,6 @@ jobs:
 
       - name: Pull Amplify environment
         run: |
-          cd amplify
           amplify pull --appId d2cfef0drhe8i4
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
