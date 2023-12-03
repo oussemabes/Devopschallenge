@@ -70,8 +70,7 @@ Name of the file: `ci-cd.yml`
 
 
 ## Making Changes to This Last API from Local and Deploy It from the CI/CD GitHub Actions after making changes
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+![Alt text](image-26.png)
 ## Add Secret Access Key for best practices
 ![Alt text](image-25.png)
 Name of the file CI/CD configuration: `ci-cd-appsync-update.yml`
