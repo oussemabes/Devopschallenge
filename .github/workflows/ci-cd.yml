@@ -1,0 +1,26 @@
+name: Build Devops challenge Application
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # Replace with the version of Node.js that your project uses
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build # Replace with your build script
