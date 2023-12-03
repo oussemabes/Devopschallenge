@@ -77,4 +77,7 @@ Name of the file: `ci-cd.yml`
 ## Add Secret Access Key for best practices
 ![Alt text](screen-shots/image-25.png)
 Name of the file CI/CD configuration: `ci-cd-appsync-update.yml`
-
+# How to run it ?
+To run this project simply  `npm i`.  
+To start project `npm start`.  
+Then you see all posts and add one with author and title  

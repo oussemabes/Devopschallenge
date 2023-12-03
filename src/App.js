@@ -42,6 +42,7 @@ function App() {
       const result= await client.graphql({
         query: CreatePost, variables: { title: newPost.title, author: newPost.author }
       },);
+      setNewPost({ title: "", author: "" })
       console.log(result)
       await fetchPosts(); // Refresh the posts after adding a new one
     } catch (error) {
