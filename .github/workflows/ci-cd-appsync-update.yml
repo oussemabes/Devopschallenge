@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: devopschallenge  # Add this line to reference the environment
+    environment: devopschallenge 
 
 
     steps:

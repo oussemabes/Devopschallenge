@@ -10,8 +10,7 @@
 
 # production
 /build
-/image-1*
-image-1*
+
 # misc
 # .DS_Store
 # .env.local
