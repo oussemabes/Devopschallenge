@@ -64,11 +64,11 @@ I used it in `amplify init`, then I wrote the entire logic based on Amplify docu
 This is the home page where you can add a title and author, and they will be added.
 ![Alt text](image-1.png)
 ## Set Up GitHub Actions for My React-Amplify Application
-Step 1: Create a Workflow File
-Step 2: Add a New Workflow
-Step 3: Define the Workflow in the YAML File
-Step 4: Push the Changes
-Name of the file: `ci-cd.yml`
+Step 1: Create a Workflow File.  
+Step 2: Add a New Workflow.  
+Step 3: Define the Workflow in the YAML File.  
+Step 4: Push the Changes.  
+Name of the file: `ci-cd.yml`.  
 
 
 
