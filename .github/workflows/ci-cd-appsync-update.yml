@@ -1,33 +1,6 @@
-name: Update Appsync api
-
-on:
-  push:
-    branches:
-      - main
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-
-      - name: Install Amplify CLI
-        run: |
-          npm install -g @aws-amplify/cli
-          amplify configure
-          amplify env pull
-
   deploy:
     runs-on: ubuntu-latest
-
-    needs: build
 
     steps:
       - name: Checkout repository
