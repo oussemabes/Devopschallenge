@@ -60,6 +60,9 @@ And I had to create an access key.
 ![Alt text](screen-shots/image-23.png)
 I used it in `amplify init`, then I wrote the entire logic based on Amplify documentation [https://docs.amplify.aws/react/](https://docs.amplify.aws/react/).
 
+![Alt text](image.png)
+This is the home page where you can add a title and author, and they will be added.
+![Alt text](image-1.png)
 ## Set Up GitHub Actions for My React-Amplify Application
 Step 1: Create a Workflow File
 Step 2: Add a New Workflow
